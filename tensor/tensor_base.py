@@ -12,6 +12,7 @@ def show_tensor_info(data):
     print("size: {}".format(data.size()))
     print("stride: {}".format(data.stride()))
     print("offset: {}".format(data.storage_offset()))
+    print("contiguous: {}".format(data.is_contiguous()))
 
 if __name__ == "__main__":
     show_tensor_info(data)
